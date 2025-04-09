@@ -114,6 +114,7 @@ def Paper_Player():
 
 def Rock_Player_event(event):
 	Rock_Player()
+	
 def Rock_Player():
 	global random_image
 	global player
