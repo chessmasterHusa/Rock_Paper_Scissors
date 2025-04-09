@@ -9,7 +9,6 @@ fenetre = Tk()
 
 emplacement = os.path.dirname(__file__) + "/images/"
 
-# Profile = {1 : ""}
 fenetre["bg"] = "yellow"
 fenetre.title("Rock Paper Scissors")
 
@@ -24,33 +23,26 @@ score_draw = 0
 
 button_disabled = False
 
-load1 = Image.open(emplacement + "Paper_Player.jpg")
+load1 = Image.open(emplacement + "Paper_Player.png")
 P_P = ImageTk.PhotoImage(load1)
-# Profile[1] = P_P
 
-load2 = Image.open(emplacement + "Paper_Computer.jpg")
+load2 = Image.open(emplacement + "Paper_Computer.png")
 P_C = ImageTk.PhotoImage(load2)
-# Profile[2] = P_C
 
-load3 = Image.open(emplacement + "Rock_Player.jpg")
+load3 = Image.open(emplacement + "Rock_Player.png")
 R_P = ImageTk.PhotoImage(load3)
-# Profile[3] = R_P
 
-load4 = Image.open(emplacement + "Rock_Computer.jpg")
+load4 = Image.open(emplacement + "Rock_Computer.png")
 R_C = ImageTk.PhotoImage(load4)
-# Profile[4] = R_C
 
-load5 = Image.open(emplacement + "Scissors_Player.jpg")
+load5 = Image.open(emplacement + "Scissors_Player.png")
 S_P = ImageTk.PhotoImage(load5)
-# Profile[5] = S_P
 
-load6 = Image.open(emplacement + "Scissors_Computer.jpg")
+load6 = Image.open(emplacement + "Scissors_Computer.png")
 S_C = ImageTk.PhotoImage(load6)
-# Profile[6] = S_C
 
 load7 = Image.open(emplacement + "unknown.jpg")
 unknown = ImageTk.PhotoImage(load7)
-# Profile[7] = unknown
 
 label_image_computer = Label(fenetre, image=unknown)
 label_image_computer.grid(row=2, column=1)
