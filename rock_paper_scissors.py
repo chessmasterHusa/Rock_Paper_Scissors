@@ -7,9 +7,9 @@ fenetre = Tk()
 
 # fenetre.geometry("500x500")
 
-emplacement = os.path.dirname(__file__) + "/"
+emplacement = os.path.dirname(__file__) + "/images/"
 
-Profile = {1 : ""}
+# Profile = {1 : ""}
 fenetre["bg"] = "yellow"
 fenetre.title("Rock Paper Scissors")
 
@@ -26,31 +26,31 @@ button_disabled = False
 
 load1 = Image.open(emplacement + "Paper_Player.jpg")
 P_P = ImageTk.PhotoImage(load1)
-Profile[1] = P_P
+# Profile[1] = P_P
 
 load2 = Image.open(emplacement + "Paper_Computer.jpg")
 P_C = ImageTk.PhotoImage(load2)
-Profile[2] = P_C
+# Profile[2] = P_C
 
 load3 = Image.open(emplacement + "Rock_Player.jpg")
 R_P = ImageTk.PhotoImage(load3)
-Profile[3] = R_P
+# Profile[3] = R_P
 
 load4 = Image.open(emplacement + "Rock_Computer.jpg")
 R_C = ImageTk.PhotoImage(load4)
-Profile[4] = R_C
+# Profile[4] = R_C
 
 load5 = Image.open(emplacement + "Scissors_Player.jpg")
 S_P = ImageTk.PhotoImage(load5)
-Profile[5] = S_P
+# Profile[5] = S_P
 
 load6 = Image.open(emplacement + "Scissors_Computer.jpg")
 S_C = ImageTk.PhotoImage(load6)
-Profile[6] = S_C
+# Profile[6] = S_C
 
 load7 = Image.open(emplacement + "unknown.jpg")
 unknown = ImageTk.PhotoImage(load7)
-Profile[7] = unknown
+# Profile[7] = unknown
 
 label_image_computer = Label(fenetre, image=unknown)
 label_image_computer.grid(row=2, column=1)
@@ -114,7 +114,7 @@ def Paper_Player():
 
 def Rock_Player_event(event):
 	Rock_Player()
-	
+
 def Rock_Player():
 	global random_image
 	global player
