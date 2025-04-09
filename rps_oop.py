@@ -46,6 +46,10 @@ class RockPaperScissors(tk.Tk):
 
     def show(self):
         self.mainloop()
+    
+
+    def escape(self):
+        self.bind("<Escape>", lambda x: self.quit())
 
 
 if __name__ == "__main__":
@@ -55,4 +59,6 @@ if __name__ == "__main__":
     app = RockPaperScissors(
         image_dir=image_dir
     )
+    
+    app.escape()
     app.show()
