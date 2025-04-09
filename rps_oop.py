@@ -8,15 +8,15 @@ class RockLabel(tk.Label):
     def __init__(
         self,
         window: tk.Misc,
-        image_dir: Path, 
-        image_name: str 
-    ):  
+        image_dir: Path,
+        image_name: str
+    ):
         self.image = ImageTk.PhotoImage(
             Image.open(image_dir / image_name)
         )
 
         super().__init__(
-            master=window, image=self.image 
+            master=window, image=self.image
         )
 
     def set_grid(
